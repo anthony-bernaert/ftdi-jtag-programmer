@@ -1,0 +1,77 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "PGB1010603MR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "D" (id 0) (at -5.08 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "PGB1010603MR" (id 1) (at -5.08 -5.08 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "PGB1010603MR:DIOC1608X36N" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "07/27/15" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer recommendations" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "0.36 mm" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Littelfuse Inc." (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "PGB1010603MR_0_0"
+      (polyline
+        (pts
+          (xy 0.0 0.0)
+          (xy -1.27 -0.762)
+          (xy -1.27 0.762)
+          (xy 0.0 0.0)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 0.0 -0.762) (xy 0.0 0.762)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 0.0 0.0)
+          (xy 1.27 0.762)
+          (xy 1.27 -0.762)
+          (xy 0.0 0.0)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 0.0 -0.762) (xy -0.254 -1.016)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 0.762) (xy 0.254 1.016)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 0.0) (xy 2.54 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 0.0) (xy -2.54 0.0)) (stroke (width 0.1524))
+      )
+      (pin passive line (at -5.08 0.0 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

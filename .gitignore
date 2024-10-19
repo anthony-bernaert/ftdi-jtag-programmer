@@ -1,0 +1,13 @@
+*.json
+fp-info-cache
+*.zip
+*-backups/
+*.csv
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.xml
+.DS_Store
+*.bak
+*.kicad_prl
+*/Gerber/**
+*.pdf
