@@ -35,3 +35,9 @@ If you see errors like
   - Only Vivado 2022 and newer have the utility included
   - It seems things are broken in Vivado 2024; try using a lower version such as Vivado 2023.2
   - Alternatively, use the Linux tool `ftdi_eeprom` or my own FTDI EEPROM dumper tool to configure an FTDI device with a Xilinx 'fingerprint'.
+
+### USB driver conflicts
+If you used ESP32 development boards in the past, you might have used a tool like Zadig to replace USB drivers for FT2232H devices. If you have this installed, make sure that the correct (FTDI) driver is not automatically replaced for the JTAG programmer board, as can be seen here:
+
+![thumbnail_image](https://github.com/user-attachments/assets/4f74fd7b-d4f5-47e7-9d5e-4f84b8ec60e5)
+
