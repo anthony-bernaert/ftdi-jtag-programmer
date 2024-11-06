@@ -8,7 +8,7 @@ In case your board doesn't start up right away, or does not enumerate over USB, 
 ### Check the power
 Check there is 5V (on TP14), 3.3V (on J5, pin 2), VPHY 3.3V (TP16), VPLL 3.3V (TP15), 2.5V (on J5, pin 3) and 1.8V (on TP2).
   - It's good to check the current draw of the board: it should be well under 100 mA. If it's higher, something is definitely wrong!
-  - If there is no 5V, the issue might be the USB connector soldering, the input filter (ferrite bead) or the USB cable (also try another USB port or cable).
+  - If there is no 5V, the issue might be the USB connector soldering, the input filter (ferrite bead) or the USB cable. Before trying (to fry) another USB port, it may be wise to apply 5V from a lab supply instead and verify current draw first.
   - If there is no 3.3V or 2.5V: check regulators U1 and U8.
   - If there is no VPHY or VPLL, check the ferrite filter between 3.3V and the VPHY/VPLL rail.
   - If there is no 1.8V: check the FTDI chip itself, does it get hot, does it have shorts on its pins?
