@@ -17,6 +17,11 @@ If you have an oscilloscope, measure the OSCI/OSCO signals.
   - Do you see the crystal starting up? If yes, is it a stable wave (a centered sine-like wave on OSCI, and a more square-like wave on OSCO)? Does it have the right frequency (12 MHz)? It might stop running abruptly (after like 10 ms) if there was an enumeration failure, so be sure to also measure when plugging in the device.
   - If it is unstable, try tuning the load capacitors (check the datasheet of the crystal). FTDI suggests to use 27 pF capacitors as a default, but recommends verifying the crystal manufacturer's specification.
 
+### EEPROM corruption
+Make sure you are not using an EEPROM with corrupt FTDI configuration data. This can happen after writing the device EEPROM with an invalid dump (specifically when it has a correct checksum and invalid configuration data).
+
+Unfortunately, this puts the device in a 'bricked' state and the only solution is to replace the EEPROM chip. To verify that the EEPROM is at fault, desolder the 93LC56B chip and plug in the device. Without an EEPROM, the FTDI chip boots with default settings (which of course you cannot change until you put in a new EEPROM chip).
+
 ## Software issues
 If the board starts up correctly (PWREN LED on) and is recognized by your operating system, driver issues might still throw a spanner in the works.
 ### FT_PROG doesn't see any devices
