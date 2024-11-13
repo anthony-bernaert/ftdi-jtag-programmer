@@ -7,7 +7,7 @@
   (title_block
     (title "FTDI JTAG Programmer")
     (date "2024-10-11")
-    (rev "1")
+    (rev "1.1")
   )
 
   (lib_symbols
@@ -1113,7 +1113,7 @@
     (uuid ffb96689-3faa-46ac-82db-412db579b2b9)
   )
 
-  (text "Alternatively, the VREF pin can be \nused to output (unprotected) 5V from the USB\nconnector like a real FTDI cable. Then, D15,\nD16 and D17 are not mounted, and R22 is mounted."
+  (text "Alternatively, the VREF pin can be \nused to output (unprotected) 5V from the USB\nconnector like a real FTDI cable. Then, D16\nis not mounted, and R22 is mounted."
     (at 118.11 130.81 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 228e796e-2873-49bf-a5ec-cbfec12a906a)

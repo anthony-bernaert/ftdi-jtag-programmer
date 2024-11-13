@@ -7,7 +7,7 @@
   (title_block
     (title "FTDI JTAG Programmer")
     (date "2024-10-11")
-    (rev "1")
+    (rev "1.1")
   )
 
   (lib_symbols
