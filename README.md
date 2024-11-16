@@ -22,9 +22,9 @@ The board also provides a UART port for general-purpose serial communication bet
 (*) These are mounting variations, so to be decided during PCB assembly
 
 ## Build overview
-<img src="https://github.com/user-attachments/assets/f82e22ff-c564-4820-a637-432740783d36" width="500" />
+<img src="https://github.com/user-attachments/assets/f82e22ff-c564-4820-a637-432740783d36" width="400" />
 
-<img src="https://github.com/user-attachments/assets/0392a390-f90f-44df-8581-c5c0c0df1bc8" width="500" />
+<img src="https://github.com/user-attachments/assets/0392a390-f90f-44df-8581-c5c0c0df1bc8" width="400" />
 
 Files for 3D printing an optional enclosure are also provided (see releases section). Using an enclosure is recommended to prevent accidental shorts during use.
 
