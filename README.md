@@ -1,7 +1,9 @@
 # FTDI-based UART and JTAG Programmer for FPGAs
-This JTAG programmer board is based on an FTDI chip and supports Lattice, AMD/Xilinx and Altera/Intel FPGAs. It allows those devices to be programmed and debugged over USB through the regular toolchains.
+This JTAG programmer board is based on an FTDI chip and supports Lattice, AMD/Xilinx and Altera/Intel FPGAs. It allows those devices to be programmed and debugged over USB through their regular toolchains.
 
 The board also provides a UART port for general-purpose serial communication between a PC application and any electronics project.
+
+If you work with a lot of different FPGAs, this solution effectively replaces most of your vendor-specific JTAG cables (which, moreover, often cost an arm and a leg).
 
 ## Features
 - Based on the FT2232H chip
@@ -17,7 +19,7 @@ The board also provides a UART port for general-purpose serial communication bet
 - Buffered I/O pins with surge protection
   - Outputs are current-limited
   - Inputs are 5V tolerant
-- For Xilinx/AMD and Lattice, just the standard FTDI software drivers are needed
+- For Xilinx/AMD and Lattice, only the standard FTDI software drivers are needed
  
 (*) These are mounting variations, so to be decided during PCB assembly
 
@@ -26,7 +28,9 @@ The board also provides a UART port for general-purpose serial communication bet
 
 <img src="https://github.com/user-attachments/assets/0392a390-f90f-44df-8581-c5c0c0df1bc8" width="400" />
 
-Files for 3D printing an optional enclosure are also provided (see releases section). Using an enclosure is recommended to prevent accidental shorts during use.
+This board was designed using KiCad 7. Navigate to the releases section to obtain the latest production files and schematic.
+
+Files for 3D printing an optional enclosure are also provided. Using an enclosure is recommended to prevent accidental shorts during use.
 
 <img src="https://github.com/user-attachments/assets/0eb81f71-52bd-4e76-bff5-49464992ebff" width="500" />
 
