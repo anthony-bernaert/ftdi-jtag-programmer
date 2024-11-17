@@ -1,21 +1,21 @@
 # FTDI-based UART and JTAG Programmer for FPGAs
-This JTAG programmer board is based on an FTDI chip and supports Lattice, AMD/Xilinx and Altera/Intel FPGAs. It allows those devices to be programmed and debugged over USB through their regular toolchains.
+This JTAG programmer board is based on an FTDI chip and supports Lattice, AMD/Xilinx, Altera/Intel FPGAs, and probably more. It allows those devices to be programmed and debugged over USB through their regular toolchains.
 
 The board also provides a UART port for general-purpose serial communication between a PC application and any electronics project.
 
-If you work with a lot of different FPGAs, this solution effectively replaces most of your vendor-specific JTAG cables (which, moreover, often cost an arm and a leg).
+If you work with a lot of different FPGAs, this solution can effectively replace most of your vendor-specific JTAG cables (which, moreover, often cost an arm and a leg).
 
 ## Features
 - Based on the FT2232H chip
 - 1 JTAG port
-  - Programs and debugs Lattice, AMD/Xilinx and Altera/Intel FPGAs through their respective toolchains
+  - Programs and debugs Lattice, AMD/Xilinx, Altera/Intel, and probably also other FPGAs through their respective toolchains
   - Standard 2 mm Xilinx 2x7 header connector
   - Also has a 6-pin 2.54 mm header for use with jumper wires
   - Voltage reference input pin configures the I/O voltage (2.5-5V)
 - 1 UART port
   - Generic serial communication through virtual COM port
   - 6-pin 2.54 mm header, pinout compatible with FTDI's TTL-232R cables
-  - Configurable 5V output or voltage reference input (*)
+  - Configurable 5V output or voltage reference input (2.5-5V) (*)
 - Buffered I/O pins with surge protection
   - Outputs are current-limited
   - Inputs are 5V tolerant
@@ -30,7 +30,7 @@ If you work with a lot of different FPGAs, this solution effectively replaces mo
 
 This board was designed using KiCad 7. Navigate to the releases section to obtain the latest production files and schematic.
 
-Files for 3D printing an optional enclosure are also provided. Using an enclosure is recommended to prevent accidental shorts during use.
+Files for 3D printing an optional enclosure are also provided. The enclosure is recommended to prevent accidental shorts during use.
 
 <img src="https://github.com/user-attachments/assets/0eb81f71-52bd-4e76-bff5-49464992ebff" width="500" />
 
