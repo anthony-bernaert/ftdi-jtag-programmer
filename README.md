@@ -1,9 +1,9 @@
-# FTDI-based UART and JTAG Programmer for FPGAs
-This JTAG programmer board is based on an FTDI chip and supports Lattice, AMD/Xilinx, Altera/Intel FPGAs, and probably more. It allows those devices to be programmed and debugged over USB through their regular toolchains.
+# FTDI-based JTAG Programmer for FPGAs
+This JTAG programmer board is based on an FTDI chip and supports Lattice, AMD (Xilinx), Intel (Altera) FPGAs, and probably more. It allows those devices to be programmed and debugged over USB through their regular toolchains.
 
-The board also provides a UART port for general-purpose serial communication between a PC application and any electronics project.
+The board also provides a separate UART port for general-purpose serial communication between a PC application and any other board.
 
-If you work with a lot of different FPGAs, this solution can effectively replace most of your vendor-specific JTAG cables (which, moreover, often cost an arm and a leg).
+If you work with a lot of different FPGAs, this solution can be used as a universal, cost-effective replacement for most of your vendor-specific JTAG cables.
 
 ## Features
 - Based on the FT2232H chip
@@ -21,14 +21,16 @@ If you work with a lot of different FPGAs, this solution can effectively replace
   - Inputs are 5V tolerant
 - For Xilinx/AMD and Lattice, only the standard FTDI software drivers are needed
  
-(*) These are mounting variations, so to be decided during PCB assembly
+(*) These are mounting variations, so to be decided during PCB assembly.
 
 ## Build overview
-<img src="https://github.com/user-attachments/assets/f82e22ff-c564-4820-a637-432740783d36" width="400" />
+<img src="https://github.com/user-attachments/assets/7395aee2-f5fe-4fce-978e-9c705c561ec0" width="400" />
 
-<img src="https://github.com/user-attachments/assets/0392a390-f90f-44df-8581-c5c0c0df1bc8" width="400" />
+<img src="https://github.com/user-attachments/assets/c2324eec-d306-41d3-bb89-3800ac6dc31b" width="400" />
 
-This board was designed using KiCad 7. Navigate to the releases section to obtain the latest production files and schematic.
+This board was designed using KiCad 7.0.2.
+
+Navigate to the releases section to obtain the latest production files and schematic.
 
 Files for 3D printing an optional enclosure are also provided. The enclosure is recommended to prevent accidental shorts during use.
 
