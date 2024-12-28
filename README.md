@@ -108,7 +108,9 @@ Once the EEPROM is programmed, the cable appears as a Digilent USB JTAG cable:
 ### Altera/Intel
 For Quartus software to work with FT2232HL devices, one option is to add a library file to your Quartus installation directory. You'll find a ready-made DLL (if you're on Windows) [here](https://github.com/anthony-bernaert/jtag-mpsse-blaster). This is a fork of an open-source solution that adds FTDI MPSSE support to Quartus Programmer/Signal Tap. Linux is also supported, though I did not test this.
 
-After installing the .dll/.so file, the JTAG programmer board should show up in the available hardware list of Quartus and your FPGA is ready to be programmed.
+After installing the .dll/.so file, the JTAG programmer board should show up in the available hardware list of Quartus and your FPGA is ready to be programmed:
+
+<img src="https://github.com/user-attachments/assets/405c9fbc-ca07-49d9-83ff-b391de7fe68e" width="700" />
 
 If you don't like modifying your Quartus installation manually, an alternative solution is to configure the USB device as an 'Arrow USB Blaster'. You will find the required EEPROM dump on [dragonlock2's ftdi_dumps repository](https://github.com/dragonlock2/ftdi_dumps?tab=readme-ov-file).
 
