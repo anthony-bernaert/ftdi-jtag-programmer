@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|92550000|91507526|48da75d6-a1d9-440a-9c58-b74f99472d11|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -114,7 +116,7 @@
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.175,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -285,7 +287,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "power_pin_not_driven|1314450|1282700|8f8bfad4-835f-4d57-8d02-7b728738c1a7|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -538,6 +542,23 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.158242,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB_DIFF_PAIR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -547,10 +568,15 @@
     "netclass_assignments": {
       "+2V5": "POWER",
       "+3V3": "POWER",
+      "/FTDI/FTDI_D+": "USB_DIFF_PAIR",
+      "/FTDI/FTDI_D-": "USB_DIFF_PAIR",
       "/FTDI/VPHY": "POWER",
       "/FTDI/VPLL": "POWER",
       "/Power/VBUS": "POWER",
-      "/VBUS_FILT": "POWER"
+      "/USB_D+": "USB_DIFF_PAIR",
+      "/USB_D-": "USB_DIFF_PAIR",
+      "/VBUS_FILT": "POWER",
+      "Net-(C3-Pad1)": "POWER"
     },
     "netclass_patterns": []
   },
