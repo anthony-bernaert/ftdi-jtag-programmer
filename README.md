@@ -7,15 +7,19 @@ If you work with a lot of different FPGAs, this solution can be used as a univer
 
 ## Features
 - Based on the FT2232H chip
+- USB-C connector
+- On-board resettable fuse to protect your host's USB port
 - 1 JTAG port
   - Programs and debugs Lattice, AMD/Xilinx, Altera/Intel, and probably also other FPGAs through their respective toolchains
   - Standard 2 mm Xilinx 2x7 header connector
   - Also has a 6-pin 2.54 mm header for use with jumper wires
   - Voltage reference input pin configures the I/O voltage (2.5-5V)
+  - An LED indicates presence of an external VREF voltage
 - 1 UART port
   - Generic serial communication through virtual COM port
   - 6-pin 2.54 mm header, pinout compatible with FTDI's TTL-232R cables
   - Configurable 5V output or voltage reference input (2.5-5V) (*)
+  - An LED indicates presence of an external VREF voltage
 - Buffered I/O pins with surge protection
   - Outputs are current-limited
   - Inputs are 5V tolerant
@@ -24,18 +28,19 @@ If you work with a lot of different FPGAs, this solution can be used as a univer
 (*) These are mounting variations, so to be decided during PCB assembly.
 
 ## Build overview
-<img src="https://github.com/user-attachments/assets/7395aee2-f5fe-4fce-978e-9c705c561ec0" width="400" />
+<img src="https://github.com/user-attachments/assets/4ba825bd-20cf-4b8b-a99a-7bddd78613e2" width="400" />
 
-<img src="https://github.com/user-attachments/assets/c2324eec-d306-41d3-bb89-3800ac6dc31b" width="400" />
+<img src="https://github.com/user-attachments/assets/8ed36290-4359-42ab-9d8f-86372d595b73" width="400" />
 
 This board was designed using KiCad 7.0.2.
 
-Navigate to the releases section to obtain the latest production files and schematic.
+Navigate to the releases section to obtain the latest production files and schematic. The BOM contains references to LCSC parts, so that you can easily order PCB assemblies at e.g. JLCPCB.
 
 Files for 3D printing an optional enclosure are also provided. The enclosure is recommended to prevent accidental shorts during use.
 
-<img src="https://github.com/user-attachments/assets/0eb81f71-52bd-4e76-bff5-49464992ebff" width="500" />
+<img src="https://github.com/user-attachments/assets/7e8ec67d-edc4-4ca6-a215-ca58f2dd11ad" width="500" />
 
+It consists of a top and bottom part, which slide in horizontally; no screws or glue are necessary. For resilience and visibility of the LEDs, it is recommended to print it in a translucent PETG material.
 
 ## How to use
 ### First-time configuration
